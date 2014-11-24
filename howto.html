@@ -86,12 +86,15 @@
 				<img src="images/howto_aerialview.jpeg"></img></li>
 				<li><strong>Community View</strong> adds a community layer to the Chicago area representing all 77 communities, which are then each clickable to obtain the name of the corresponding community.
 				<img src="images/howto_communityview.jpeg"></img></li>
-				<li><strong>Viewable Data</strong> is used to toggle various datasets on the Chicago map. For example, if I would like to see the latest information on potholes on the map, I would toggle "Potholes". There are 8 datasets that the user can toggle, including potholes, abandoned vehicles, street lights out, divvy bike information, crime, the CTA buses, food inspection information, and touristy wikipedia for interesting locations on the entire Chicago map. These datasets will be described in greater detail in the "Project Data" section. In the screenshot example below, we have selected a circular region in downtown Chicago and included crime, CTA buses, and street lights out information.
+				<li><strong>Viewable Data</strong> is used to toggle various datasets on the Chicago map. For example, if I would like to see the latest information on potholes on the map, I would toggle "Potholes". There are 8 datasets that the user can toggle, including potholes, abandoned vehicles, street lights out, divvy bike information, crime, the CTA buses, food inspection information, and touristy wikipedia for interesting locations on the entire Chicago map. These datasets will be described in greater detail in the "Project Data" section. One interesting thing to note, is that the CTA buses actually move approximately every minute on the map so you can actually see them moving! In the screenshot example below, we have selected a circular region in downtown Chicago and included crime, CTA buses, and street lights out information.
 				<img src="images/howto_exampledataonmap.jpeg"></img></li> 
 				<li><strong>Data Filters</strong> is a nice feature that allows the user to show or hide various things on the map, such as the weather, 1 week VS 1 month old data for only the 311 data (with the exception of crime data which is 2 weeks VS 1 month old), and finally the user can select the UIC to Museum campus area as the selected rectagular area. The screenshot below illustrates the CTA buses currently driving in the UIC-Museum campus area.
 				<img src="images/howto_ctaonmuseum.jpeg"></img></li>
 			</ul>
 			<h2><a name="team-members" class="anchor" href="#team-members"><span class="octicon octicon-link"></span></a>Refresh</h2>
+			Suppose the user is watching the application for crime as the user wants to drive to a destination taking  a path with less potholes. However, suppose that a user selects a good path but then several newly reported potholes appear on that path! How will the user be able to identify this newly reported data since approximately the past 2 minutes? The refresh feature helps in exactly addressing this problem. Each time new data appears on the map within approximately the past 2 minutes, the application will identify the new data with a popup. We can see the before versus after snapshot for potholes below as an example.
+			<img src="images/howto_refreshbefore.jpeg"></img>
+			<img src="images/howto_refreshafter.jpeg"></img></li>
 			
       </p>
     </section>

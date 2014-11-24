@@ -1,0 +1,15 @@
+EXTERNAL LIBRARIES/PROJECTS
+Leaflet
+Jquery
+Leaflet.DBPediaLayer
+GeoJSON Utilities (https://github.com/maxogden/geojson-js-utils)
+D3.js
+Leaflet Sidebar v2
+Leaflet.Draw
+Leaflet.Locate
+Leaflet Panel Layers
+
+GRAPHICS
+FontAwesome
+IcoMoo
+Inkscape
