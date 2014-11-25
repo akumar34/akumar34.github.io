@@ -46,7 +46,47 @@
               <br>For this project, we used a variety of external projects, libraries, and tools/programs in addition to line upon line of our own original code. Let's go ahead and start with the external resources we used in our project.
             </p>
             <p>
-              <a href="http://leafletjs.com/"><strong>Leaflet</strong></a><br><em>An Open-Source JavaScript Library for Mobile-Friendly Interactive Maps</em></strong>
+              <a href="http://leafletjs.com/"><strong>Leaflet</strong></a>
+              <strong><em> An Open-Source JavaScript Library for Mobile-Friendly Interactive Maps</em></strong>
+              <br><em>Our bread and butter.</em> Everything you can see and click in our project exists in one way or another as an extension of Leaflet's core functionality. Each DOM element of our program is a child of a Leaflet DOM element. Similarly, on our back end, every GUI element is plugged into Leaflet's interactivity events and methods.
+            </p>
+            <p>
+              <a href="http://jquery.com/"><strong>JQuery</strong></a>
+              <strong><em> Write less, do more</em></strong>
+              <br><em>Deus Ex GUI.</em> Without JQuery, we would have not been able to realize a significant portion of our GUI design. We encountered an abundance of conflicts between our GUI elements/plug-ins and Leaflet's own way of handling the layout of Control objects on the DOM. JQuery came to the rescue, allowing us to tweak and fine tune our GUI.
+            </p>
+            <p>
+              <a href="http://d3js.org/"><strong>D3.js</strong></a>
+              <strong><em> Data-Driven Documents</em></strong>
+              <br><em>Who's Jason and why does he like charts?</em> D3.js was arguably as integral to our project as Leaflet itself. The utility of D3 was two-fold for us; both our front end and back end wouldn't exist without the use of D3. Our graphs exist directly as a result of D3's handy methods for generating dynamic DOM elements from data sets of any size. Speaking of data sets and size, we also made heavy use of D3's absolutely invaluable JSON import and parsing functionality. Our program has the potential to show well over 20,000 markers, each representing a unique data element from our data sets.
+            </p>
+            <p>
+              <a href="https://github.com/turbo87/sidebar-v2/"><strong>Sidebar-v2</strong></a>
+              <strong><em> A responsive sidebar for mapping libraries like Leaflet or OpenLayers</em></strong>
+              <br><em>Just sweep it under the rug.</em> As mentioned above, we could be dealing with an enormous amount of information on screen at any given time during the use of our project. So what happens when we need more space? We <del>swept it under the rug and hope mom thinks we cleaned up</del> take advantage of the Sidebar's expand/collapse functionality.
+            </p>
+            <p>
+              <a href="https://github.com/Leaflet/Leaflet.draw"><strong>Leaflet.Draw</strong></a>
+              <strong><em> Vector drawing and editing plugin for Leaflet</em></strong>
+              <br><em>Drawing Conclusions.</em> Through this Leaflet plug-in, a user can draw arbitrary polygons over the map to specify exactly which areas of the map they would like to investigate. Each element created via Leaflet.Draw is a layer on top of the map. With this plug-in's easy backend access to drawings it creates, we were able to compare the area under a given polygon to the coordinates of our data points and display markers accordingly.
+            </p>
+            <p>
+              <a href="https://github.com/domoritz/leaflet-locatecontrol"><strong>Leaflet.Locate</strong></a>
+              <strong><em> A useful control to geolocate the user with many options</em></strong>
+              <br><em>Where am I?</em> A simple, albeit handy little plug-in we stumbled upon. With the click of a single button, the map will be centered on the user's location.
+            </p>
+            <p>
+              <a href="https://github.com/stefanocudini/leaflet-panel-layers"><strong>Leaflet Panel Layers</strong></a>
+              <strong><em> Leaflet Control Layers extended for more layers and icon legends</em></strong>
+              <br><em>So what's there to see around here?</em> Quite possibly the team's favorite GUI element. Sitting on the right hand border of the screen, this is the primary control for the program.
+            </p>
+            <p>
+              <a href="https://github.com/maxogden/geojson-js-utils"><strong>GeoJSON Utilities for JavaScript</strong></a>
+              <strong><em> JavaScript helper functions for manipulating GeoJSON</em></strong>
+            </p>
+            <p>
+              <a href="https://github.com/kr1/Leaflet.dbpediaLayer/"><strong>Leaflet.dbpediaLayer</strong></a>
+              <strong><em> Leaflet.dbpediaLayer is a Leaflet plugin adding a layer with POIs from DBpedia.</em></strong>
             </p>
         </section>
     </div>

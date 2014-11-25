@@ -1,1 +1,107 @@
-currently a stub
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Divvybikes visualization : CS 424 Project">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Project 3: Right Here, Right Now</title>
+  </head>
+
+  <body>
+<div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/akumar34/akumar34.github.io.git">View on GitHub</a>
+
+          <h1 id="project_title">Project 3: Right Here, Right Now</h1>
+          <h2 id="project_tagline">CS 424 Project</h2>
+          <table>
+            <tr>
+              <td><a href="index.html">Home</a></td>
+              <td><a href="http://www.youtube.com/watch?v=ok8nMN0QwRw&feature=youtu.be">Youtube Demo</a></td>
+              <td><a href="http://akumar34.people.uic.edu/project3_update_test/map.html">Run the App</a></td>
+              <td><a href="data.html">Project Data</a></td>
+              <td><a href="team.html">Team</a></td>
+              <td><a href="sourcecode.html">SourceCode</a></td>
+              <td><a href="howto.html">How-To</a></td>
+              <td><a href="interestingfindings.html">Interesting Findings and Patterns</a></td>
+            </tr>
+          </table>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/akumar34/Project3/archive/master.zip">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/akumar34/Project3.git">Clone This Project</a>
+            </section>
+        </header>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+      <p>
+	  		<h2><a name="team-members" class="anchor" href="#team-members"><span class="octicon octicon-link"></span></a>Patterns</h2>
+			<h3>Crime around UIC vs The Loop</h3>
+			<img src="images/uic_vs_loop_crime.png"></img>
+			<br />
+			After comparing crime event markers around UIC and The Loop for both the last week and the last month, the following patterns can be observed:
+			<br />
+			<br />
+			- The quantity of crime events recorded in The Loop is far greater than crime events near UIC.
+			<br />
+			- The vast majority of crime around UIC is THEFT, followed by a few other types.
+			<br />
+			- The majority of crime in The Loop does seem to be THEFT, but is closely followed by DECEPTIVE PRACTICE, BATTERY, and CRIMINAL TRESPASS.
+			<br />
+			<br />
+			These observations demonstrate a far greater variety and quantity of crime in The Loop than near UIC. Evidently UIC is safer than you'd think.
+			
+			
+			<br />
+			<br />
+			<h2><a name="team-members" class="anchor" href="#team-members"><span class="octicon octicon-link"></span></a>Other Findings</h2>
+			<h3>Lower Wacker car groupings</h3>
+			In the screenshot below, you can see a small grouping of abandoned cars on Lower Wacker near Navy Pier. We noticed this type of grouping in a few places and are a bit perplexed as to their origin. Perhaps it's a towing agency's storage lot? That still wouldn't explain why they are reported as "abandoned" and not "towed".
+			<br />
+			<img src="images/car_grouping.png"></img>
+			<br />
+			
+			<h3>CTA longitude / latitude accuracy</h3>
+			It seems that the CTA buses' location is given to AT LEAST 15 digits to the right of the decimal. This was determined by counting the digits on a single bus' location and there were 15 (some other buses might have reported more. 
+			<br />
+			<br />
+			What does the 15th decimal of lat/lon mean? If you add 1 to the 15th digit, you are now at an order of magnitude above nanometer scale. 
+			<br />
+			<br />
+			Example using JS math found at the to of <a href="http://www.movable-type.co.uk/scripts/latlong.html">this page</a>:
+			<br />
+			<br />
+			If you add 1 to the least significant digit of the latitude:
+			<br />
+			lat1 = 41.86403739452362;
+			<br />
+			lon1 = 87.7445912361145;
+			<br />
+			<br />
+			lat2 = 41.86403739452363;
+			<br />
+			lon2 = 87.744591236115;
+			<br />
+			<br />
+			This comes out to a diff of 4.119573810999978e-11 km, or 4.11957e-8 m, or 41.1957 nanometers!
+			While we aren't actually making use of such a precise scale of data, it is worthwhile to note the quality of data we have access to.
+			
+      </p>
+    </section>
+</div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
